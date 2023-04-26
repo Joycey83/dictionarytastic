@@ -1,13 +1,20 @@
 const Phonetic = (props) => {
   console.log(props.phonetic);
-  return (
-    <div className="phonetic">
-      <a href={props.phonetic.audio} rel="noopener" target="_blank">
-        Listen
-      </a>
-      <br />
-      {props.phonetic.text}
-    </div>
-  );
+  if (props.phonetic.audio && props.phonetic.text) {
+    return (
+      <div className="Phonetics">
+        <a
+          href={props.phonetic.audio}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Listen <i class="fa-solid fa-volume-high ms-1"></i>
+        </a>
+        <span className="text">{props.phonetic.text} </span>
+      </div>
+    );
+  } else {
+    return null;
+  }
 };
 export default Phonetic;
