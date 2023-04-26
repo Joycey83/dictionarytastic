@@ -4,12 +4,14 @@ import styles from "../components/Dictionary.module.css";
 
 const Dictionary = () => {
   const [keyword, setKeyword] = useState("");
-  const inputKeywordHandle = (event) => {};
+  const inputKeywordHandle = (event) => {
+    setKeyword(event.target.value);
+  };
   return (
     <>
       <div className={styles["dictionary--container"]}>
         <section>
-          <form>
+          <form onSubmit={searchWord}>
             <input
               type="search"
               placeholder="Search for a word"
