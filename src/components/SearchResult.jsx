@@ -1,5 +1,6 @@
 import styles from "../components/SearchResult.module.css";
 import Meaning from "./Meaning";
+import Phonetic from "./Phonetic";
 
 const SearchResult = (props) => {
   if (props.definition) {
@@ -7,7 +8,8 @@ const SearchResult = (props) => {
       <div className="Result">
         <section>
           <h1>{props.definition.word}</h1>
-          {/* <Phonetic phonetic={props.definition.phonetic} /> */}
+
+          <Phonetic phonetic={props.definition.phonetic} />
         </section>
 
         {props.definition.meanings.map(function (meaning, index) {
