@@ -1,10 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
+import styles from "../components/Dictionary.module.css";
 
 const Dictionary = () => {
   return (
     <>
-      <div className={"dictionary--container"}>
+      <div className={styles["dictionary--container"]}>
         <h2>My dictionary</h2>
       </div>
     </>
