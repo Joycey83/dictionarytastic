@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <div className="app--container">
-        <h1>Hello from React</h1>
         <Dictionary />
       </div>
     </>
