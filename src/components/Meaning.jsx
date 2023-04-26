@@ -1,6 +1,8 @@
 import styles from "../components/Meaning.module.css";
 import Synonyms from "./Synonyms";
+
 const Meaning = (props) => {
+  console.log(props.meaning);
   if (props.meaning) {
     return (
       <div className="Meaning">
@@ -14,10 +16,10 @@ const Meaning = (props) => {
               <br />
 
               <em>{definition.example}</em>
-              <Synonyms synonyms={props.meaning.synonyms} />
             </div>
           );
         })}
+        <Synonyms synonyms={props.meaning.synonyms} />
       </div>
     );
   } else {
