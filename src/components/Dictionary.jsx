@@ -37,7 +37,7 @@ const Dictionary = () => {
             />
           </form>
         </section>
-        <SearchResult />
+        <SearchResult definition={definition} />
       </div>
     </>
   );
