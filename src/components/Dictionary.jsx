@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import styles from "../components/Dictionary.module.css";
+import SearchResult from "./SearchResult";
 
 const Dictionary = () => {
   const [keyword, setKeyword] = useState("");
@@ -36,6 +37,7 @@ const Dictionary = () => {
             />
           </form>
         </section>
+        <SearchResult />
       </div>
     </>
   );
