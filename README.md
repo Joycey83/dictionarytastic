@@ -1,2 +1,2 @@
 # dictionarytastic
-A dictionary App
+A dictionary App to search for any words that come to your mind!
