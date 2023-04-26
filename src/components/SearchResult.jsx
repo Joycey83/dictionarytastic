@@ -9,7 +9,13 @@ const SearchResult = (props) => {
         <section>
           <h1>{props.definition.word}</h1>
 
-          <Phonetic phonetic={props.definition.phonetic} />
+          {props.definition.phonetics.map((phonetic, index) => {
+            return (
+              <div key={index}>
+                <Phonetic phonetic={phonetic} />
+              </div>
+            );
+          })}
         </section>
 
         {props.definition.meanings.map(function (meaning, index) {
