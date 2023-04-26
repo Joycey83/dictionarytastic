@@ -13,6 +13,7 @@ const Dictionary = () => {
               placeholder="Search for a word"
               autoFocus={true}
               className="form-control search-input"
+              onChange={inputKeywordHandle}
             />
           </form>
         </section>
