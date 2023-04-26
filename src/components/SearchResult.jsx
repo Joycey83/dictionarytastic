@@ -1,11 +1,11 @@
-import styles from "../components/SearchResult.module.css";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
+import styles from "../components/SearchResult.module.css";
 
 const SearchResult = (props) => {
   if (props.definition) {
     return (
-      <div className="searchResult">
+      <div className={styles["search--research"]}>
         <section>
           <h1>{props.definition.word}</h1>
 
