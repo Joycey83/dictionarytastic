@@ -4,10 +4,20 @@ const Meaning = (props) => {
   if (props.meaning) {
     return (
       <div className="Meaning">
-        <h3>{props.meaning.partOfSpeech}</h3>
-        <p>{props.meaning.definition}</p>
-        <em>{props.meaning.example}</em>
-        <Synonyms synonyms={props.meaning.synonyms} />
+        <h4>
+          <strong>{props.meaning.partOfSpeech}</strong>
+        </h4>
+        {props.meaning.definitions.map((definition, index) => {
+          return (
+            <div key={index}>
+              {definition.definition}
+              <br />
+
+              <em>{definition.example}</em>
+              <Synonyms synonyms={props.meaning.synonyms} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {
