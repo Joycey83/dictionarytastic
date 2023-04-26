@@ -8,7 +8,8 @@ const Phonetic = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Listen <i class="fa-solid fa-volume-high ms-1"></i>
+          Listen
+          {/* <i class="fa-solid fa-volume-high ms-1"></i> */}
         </a>
         <span className="text">{props.phonetic.text} </span>
       </div>
