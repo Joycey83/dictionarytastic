@@ -1,8 +1,9 @@
+import styles from "../components/Phonetic.module.css";
 const Phonetic = (props) => {
   console.log(props.phonetic);
   if (props.phonetic.audio && props.phonetic.text) {
     return (
-      <div className="Phonetics">
+      <div className={styles.phonetic}>
         <a
           href={props.phonetic.audio}
           target="_blank"
