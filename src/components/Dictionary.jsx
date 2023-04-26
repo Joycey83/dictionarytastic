@@ -3,6 +3,7 @@ import axios from "axios";
 import styles from "../components/Dictionary.module.css";
 
 const Dictionary = () => {
+  const inputKeywordHandle = (event) => {};
   return (
     <>
       <div className={styles["dictionary--container"]}>
