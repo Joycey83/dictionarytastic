@@ -6,7 +6,16 @@ const Dictionary = () => {
   return (
     <>
       <div className={styles["dictionary--container"]}>
-        <h2>My dictionary</h2>
+        <section>
+          <form>
+            <input
+              type="search"
+              placeholder="Search for a word"
+              autoFocus={true}
+              className="form-control search-input"
+            />
+          </form>
+        </section>
       </div>
     </>
   );
