@@ -4,7 +4,7 @@ import axios from "axios";
 const Dictionary = () => {
   return (
     <>
-      <div>
+      <div className={"dictionary--container"}>
         <h2>My dictionary</h2>
       </div>
     </>
