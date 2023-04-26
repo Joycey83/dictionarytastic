@@ -1,0 +1,2 @@
+# dictionarytastic
+A dictionary App
