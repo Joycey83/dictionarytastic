@@ -5,7 +5,7 @@ import Phonetic from "./Phonetic";
 const SearchResult = (props) => {
   if (props.definition) {
     return (
-      <div className="Result">
+      <div className="searchResult">
         <section>
           <h1>{props.definition.word}</h1>
 
