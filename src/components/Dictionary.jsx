@@ -11,7 +11,7 @@ const Dictionary = () => {
   };
 
   const handleDictionaryResponse = (response) => {
-    console.log(response.data[0]);
+    // console.log(response.data[0]);
     setDefinition(response.data[0]);
   };
 
