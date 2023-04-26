@@ -3,6 +3,7 @@ import axios from "axios";
 import styles from "../components/Dictionary.module.css";
 
 const Dictionary = () => {
+  const [keyword, setKeyword] = useState("");
   const inputKeywordHandle = (event) => {};
   return (
     <>
