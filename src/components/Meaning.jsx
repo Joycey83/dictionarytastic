@@ -1,4 +1,4 @@
-const Meaning = () => {
-  return <div>Meaning</div>;
+const Meaning = (props) => {
+  return <>Meaning</>;
 };
 export default Meaning;
