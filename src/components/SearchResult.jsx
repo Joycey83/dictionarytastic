@@ -1,3 +1,4 @@
+import styles from "../components/SearchResult.module.css";
 const SearchResult = () => {
   return (
     <>
