@@ -1,3 +1,4 @@
+import Dictionary from "./components/Dictionary";
 import "./App.css";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
       <div className="app--container">
         <h1>Hello from React</h1>
+        <Dictionary />
       </div>
     </>
   );
