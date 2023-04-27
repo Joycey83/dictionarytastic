@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import styles from "../components/Dictionary.module.css";
 import SearchResult from "./SearchResult";
+import Photos from "./Photos";
 
 const Dictionary = () => {
   const [keyword, setKeyword] = useState("");
@@ -49,6 +50,7 @@ const Dictionary = () => {
           </form>
         </section>
         <SearchResult definition={definition} />
+        <Photos photos={photos} />
       </div>
     </>
   );
