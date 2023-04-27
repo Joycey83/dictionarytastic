@@ -1,1 +1,9 @@
-
+.results--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  max-width: 400px;
+  margin: 2rem 2rem;
+  background-color: aqua;
+}
