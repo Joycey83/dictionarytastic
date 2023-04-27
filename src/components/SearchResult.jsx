@@ -1,6 +1,7 @@
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 import styles from "../components/SearchResult.module.css";
+import { images } from "../data";
 
 const SearchResult = (props) => {
   if (props.definition) {
@@ -20,11 +21,9 @@ const SearchResult = (props) => {
 
         {props.definition.meanings.map(function (meaning, index) {
           return (
-            <div className="row">
-              <section key={index} className={styles["definition--section"]}>
-                <Meaning meaning={meaning} />
-              </section>
-            </div>
+            <section key={index} className={styles["definition--section"]}>
+              <Meaning meaning={meaning} />
+            </section>
           );
         })}
       </div>
