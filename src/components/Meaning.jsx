@@ -5,7 +5,7 @@ const Meaning = (props) => {
   console.log(props.meaning);
   if (props.meaning) {
     return (
-      <div className="Meaning">
+      <div className={styles.meaning}>
         <h4>
           <strong>{props.meaning.partOfSpeech}</strong>
         </h4>
