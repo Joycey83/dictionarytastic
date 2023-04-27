@@ -20,9 +20,11 @@ const SearchResult = (props) => {
 
         {props.definition.meanings.map(function (meaning, index) {
           return (
-            <section key={index} className={styles["definition--section"]}>
-              <Meaning meaning={meaning} />
-            </section>
+            <div className="row">
+              <section key={index} className={styles["definition--section"]}>
+                <Meaning meaning={meaning} />
+              </section>
+            </div>
           );
         })}
       </div>
