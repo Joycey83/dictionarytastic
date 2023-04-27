@@ -3,3 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+section {
+  border-radius: 8px;
+  background: blueviolet;
+  margin: 3rem;
+  padding: 30px;
+}
