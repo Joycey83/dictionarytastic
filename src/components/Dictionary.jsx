@@ -32,7 +32,7 @@ const Dictionary = () => {
               type="search"
               placeholder="Search for a word"
               autoFocus={true}
-              className="form-control search-input mt-5"
+              className="form-control search-input mt-3"
               onChange={inputKeywordHandle}
             />
           </form>
