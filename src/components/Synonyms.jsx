@@ -1,12 +1,13 @@
+import styles from "../components/Synonyms.module.css";
 const Synonyms = (props) => {
   if (props.synonyms) {
     return (
-      <div className="Synonyms">
+      <div className={styles.Synonyms}>
         <ul>
           {props.synonyms.map(function (synonym, index) {
             return (
-              <li key={index}>
-                <span>{synonym}</span>
+              <li key={index} className={styles.hightlight}>
+                {synonym}
               </li>
             );
           })}

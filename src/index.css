@@ -12,3 +12,10 @@ ul {
 li {
   list-style: none;
 }
+
+.Synonyms li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+}
