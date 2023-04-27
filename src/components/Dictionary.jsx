@@ -6,6 +6,7 @@ import SearchResult from "./SearchResult";
 const Dictionary = () => {
   const [keyword, setKeyword] = useState("");
   const [definition, setDefinition] = useState(null);
+  const [photos, setPhotos] = useState(null);
 
   const inputKeywordHandle = (event) => {
     setKeyword(event.target.value);
