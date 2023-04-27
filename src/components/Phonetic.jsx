@@ -8,6 +8,7 @@ const Phonetic = (props) => {
           href={props.phonetic.audio}
           target="_blank"
           rel="noopener noreferrer"
+          className="link-opacity-10-hover"
         >
           Listen
           {/* <i class="fa-solid fa-volume-high ms-1"></i> */}
