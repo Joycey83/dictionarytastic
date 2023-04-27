@@ -1,4 +1,8 @@
 .meaning {
   background-color: blue;
-  padding: 5rem;
+  padding: 2rem;
+}
+
+.meaning:hover {
+  background-color: aqua;
 }
