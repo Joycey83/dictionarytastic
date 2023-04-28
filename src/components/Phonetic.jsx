@@ -5,16 +5,10 @@ const Phonetic = (props) => {
   if (props.phonetic.audio && props.phonetic.text) {
     return (
       <div className={styles.phonetic}>
-        <a
-          href={props.phonetic.audio}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link-opacity-10-hover"
-        >
-          Listen
-          {/* <i class="fa-solid fa-volume-high ms-1"></i> */}
-        </a>
-        <span className="text">{props.phonetic.text} </span>
+        <h2 className="phonetic-text"> {props.phonetic.text}</h2>
+        <div className="audio-player">
+          <ReactAudioPlayer src={props.phonetic.audio} autoPlay controls />{" "}
+        </div>
       </div>
     );
   } else {
