@@ -1,7 +1,6 @@
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 import styles from "../components/SearchResult.module.css";
-import { images } from "../data";
 
 const SearchResult = (props) => {
   if (props.definition) {
