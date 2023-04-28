@@ -5,8 +5,8 @@ const Phonetic = (props) => {
   if (props.phonetic.audio && props.phonetic.text) {
     return (
       <div className={styles.phonetic}>
-        <h2 className="phonetic-text"> {props.phonetic.text}</h2>
-        <div className="audio-player">
+        <h2 className={styles["phonetic--text"]}> {props.phonetic.text}</h2>
+        <div className={styles["audio--player"]}>
           <ReactAudioPlayer src={props.phonetic.audio} autoPlay controls />{" "}
         </div>
       </div>
