@@ -1,4 +1,5 @@
-import { ReactAudioPlayer } from "react-audio-player";
+import React from "react";
+import ReactAudioPlayer from "react-audio-player";
 import styles from "../components/Phonetic.module.css";
 const Phonetic = (props) => {
   console.log(props.phonetic);
